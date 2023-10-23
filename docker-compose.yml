@@ -1,0 +1,10 @@
+version: '2'
+services:
+  node_prueba:
+    image: node
+    container_name: node_test
+    ports:
+      - 4000:4000
+    build: .
+    command: 'node index'
+
