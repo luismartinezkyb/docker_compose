@@ -7,4 +7,9 @@ services:
       - 4000:4000
     build: .
     command: 'node index'
+  db:
+    image: mongo
+    container_name: mymongoo
+    ports:
+      - 27017:27017
 
